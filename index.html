@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="stylesForJs.css"> <!-- Стили для уведомлений -->
+    <link rel="stylesheet" href="stylesForHTML.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест на знание</title>
+</head>
+<body>
+
+<h1>Тест на знание</h1>
+
+<div id="userInfo">
+    <h2>Введите ваши данные</h2>
+    <form id="userForm">
+        <input type="text" id="firstName" placeholder="Имя" required>
+        <input type="text" id="lastName" placeholder="Фамилия" required>
+        <input type="text" id="middleName" placeholder="Отчество" required>
+    </form>
+</div>
+
+<form id="quizForm">
+    <div class="question">
+        <h2>1. Какой язык используется для веб-разработки?</h2> 
+        <ul class="options">
+            <li><input type="radio" name="question1" value="HTML"> HTML</li>
+            <li><input type="radio" name="question1" value="Python"> Python</li>
+            <li><input type="radio" name="question1" value="C++"> C++</li>
+            <li><input type="radio" name="question1" value="Java"> Java</li>
+        </ul>
+    </div>
+    
+    <div class="question">
+        <h2>2. Какой язык программирования является объектно-ориентированным?</h2>
+        <ul class="options">
+            <li><input type="radio" name="question2" value="HTML"> HTML</li>
+            <li><input type="radio" name="question2" value="Python"> Python</li>
+            <li><input type="radio" name="question2" value="CSS"> CSS</li>
+            <li><input type="radio" name="question2" value="SQL"> SQL</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <h2>3. Какой из следующих языков является языком разметки?</h2>
+        <ul class="options">
+            <li><input type="radio" name="question3" value="HTML"> HTML</li>
+            <li><input type="radio" name="question3" value="Java"> Java</li>
+            <li><input type="radio" name="question3" value="C#"> C#</li>
+            <li><input type="radio" name="question3" value="Ruby"> Ruby</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <h2>4. Какой язык используется для стилизации веб-страниц?</h2>
+        <ul class="options">
+            <li><input type="radio" name="question4" value="HTML"> HTML</li>
+            <li><input type="radio" name="question4" value="CSS"> CSS</li>
+            <li><input type="radio" name="question4" value="JavaScript"> JavaScript</li>
+            <li><input type="radio" name="question4" value="Python"> Python</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <h2>5. Какой язык является языком программирования общего назначения?</h2>
+        <ul class="options">
+            <li><input type="radio" name="question5" value="HTML"> HTML</li>
+            <li><input type="radio" name="question5" value="CSS"> CSS</li>
+            <li><input type="radio" name="question5" value="JavaScript"> JavaScript</li>
+            <li><input type="radio" name="question5" value="SQL"> SQL</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <h2>6. Какой язык используется для создания динамических веб-страниц?</h2>
+        <ul class="options">
+            <li><input type="radio" name="question6" value="JavaScript"> JavaScript</li>
+            <li><input type="radio" name="question6" value="HTML"> HTML</li>
+            <li><input type="radio" name="question6" value="CSS"> CSS</li>
+            <li><input type="radio" name="question6" value="C#"> C#</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <h2>7. Какой язык программирования используется для разработки мобильных приложений?</h2>
+        <ul class="options">
+            <li><input type="radio" name="question7" value="HTML"> HTML</li>
+            <li><input type="radio" name="question7" value="Swift"> Swift</li>
+            <li><input type="radio" name="question7" value="CSS"> CSS</li>
+            <li><input type="radio" name="question7" value="SQL"> SQL</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <h2>8. Какой язык используется для работы с базами данных?</h2>
+        <ul class="options">
+            <li><input type="radio" name="question8" value="HTML"> HTML</li>
+            <li><input type="radio" name="question8" value="SQL"> SQL</li>
+            <li><input type="radio" name="question8" value="JavaScript"> JavaScript</li>
+            <li><input type="radio" name="question8" value="Python"> Python</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <h2>9. Какой язык используется для создания серверной логики?</h2>
+        <ul class="options">
+            <li><input type="radio" name="question9" value="HTML"> HTML</li>
+            <li><input type="radio" name="question9" value="Node.js"> Node.js</li>
+            <li><input type="radio" name="question9" value="CSS"> CSS</li>
+            <li><input type="radio" name="question9" value="Java"> Java</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <h2>10. Какой язык используется для создания интерактивных веб-страниц?</h2>
+        <ul class="options">
+            <li><input type="radio" name="question10" value="HTML"> HTML</li>
+            <li><input type="radio" name="question10" value="JavaScript"> JavaScript</li>
+            <li><input type="radio" name="question10" value="CSS"> CSS</li>
+            <li><input type="radio" name="question10" value="PHP"> PHP</li>
+        </ul>
+    </div>
+    <div class="question">
+        <h2>11. Какой язык программирования используется для разработки игр?</h2>
+        <ul class="options">
+            <li><input type="radio" name="question11" value="C++"> C++</li>
+            <li><input type="radio" name="question11" value="HTML"> HTML</li>
+            <li><input type="radio" name="question11" value="CSS"> CSS</li>
+            <li><input type="radio" name="question11" value="JavaScript"> JavaScript</li>
+        </ul>
+    </div>
+    
+    <div class="question">
+        <h2>12. Какой язык программирования используется для разработки серверных приложений?</h2>
+        <ul class="options">
+            <li><input type="radio" name="question12" value="Java"> Java</li>
+            <li><input type="radio" name="question12" value="HTML"> HTML</li>
+            <li><input type="radio" name="question12" value="CSS"> CSS</li>
+            <li><input type="radio" name="question12" value="PHP"> PHP</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <h2>13. Какой язык программирования используется для создания веб-приложений на стороне сервера?</h2>
+        <ul class="options">
+            <li><input type="radio" name="question13" value="Java"> Java</li>
+            <li><input type="radio" name="question13" value="JavaScript"> JavaScript</li>
+            <li><input type="radio" name="question13" value="C#"> C#</li>
+            <li><input type="radio" name="question13" value="Ruby"> Ruby</li>
+        </ul>
+    </div>
+    
+    <div class="question">
+        <h2>14. Какой язык программирования используется для создания приложений на Android?</h2>
+        <ul class="options">
+            <li><input type="radio" name="question14" value="Kotlin"> Kotlin</li>
+            <li><input type="radio" name="question14" value="Swift"> Swift</li>
+            <li><input type="radio" name="question14" value="Java"> Java</li>
+            <li><input type="radio" name="question14" value="HTML"> HTML</li>
+        </ul>
+    </div>
+    
+    <div class="question">
+        <h2>15. Какой язык программирования используется для создания игр в Unity?</h2>
+        <ul class="options">
+            <li><input type="radio" name="question15" value="C#"> C#</li>
+            <li><input type="radio" name="question15" value="C++"> C++</li>
+            <li><input type="radio" name="question15" value="JavaScript"> JavaScript</li>
+            <li><input type="radio" name="question15" value="Python"> Python</li>
+        </ul>
+    </div>
+
+    <div class="question">
+        <h2>16. Какой язык программирования используется для разработки веб-приложений на Python?</h2>
+        <ul class="options">
+            <li><input type="radio" name="question16" value="Django"> Django</li>
+            <li><input type="radio" name="question16" value="Flask"> Flask</li>
+            <li><input type="radio" name="question16" value="Ruby"> Ruby</li>
+            <li><input type="radio" name="question16" value="Java"> Java</li>
+        </ul>
+    </div>
+    
+    <div class="question">
+        <h2>17. Какой язык используется для создания пользовательских интерфейсов в мобильных приложениях?</h2>
+        <ul class="options">
+            <li><input type="radio" name="question17" value="Swift"> Swift</li>
+            <li><input type="radio" name="question17" value="HTML"> HTML</li>
+            <li><input type="radio" name="question17" value="CSS"> CSS</li>
+            <li><input type="radio" name="question17" value="Python"> Python</li>
+        </ul>
+    </div>
+    
+    <div class="question">
+        <h2>18. Какой язык используется для создания скриптов на стороне клиента?</h2>
+        <ul class="options">
+            <li><input type="radio" name="question18" value="PHP"> PHP</li>
+            <li><input type="radio" name="question18" value="JavaScript"> JavaScript</li>
+            <li><input type="radio" name="question18" value="Java"> Java</li>
+            <li><input type="radio" name="question18" value="C#"> C#</li>
+        </ul>
+    </div>
+    
+    <div class="question">
+        <h2>19. Какой язык программирования используется для создания приложений на iOS?</h2>
+        <ul class="options">
+            <li><input type="radio" name="question19" value="Kotlin"> Kotlin</li>
+            <li><input type="radio" name="question19" value="Swift"> Swift</li>
+            <li><input type="radio" name="question19" value="Java"> Java</li>
+            <li><input type="radio" name="question19" value="HTML"> HTML</li>
+        </ul>
+    </div>
+    
+    <div class="question">
+        <h2>20. Какой язык используется для создания RESTful API?</h2>
+        <ul class="options">
+            <li><input type="radio" name="question20" value="JavaScript"> JavaScript</li>
+            <li><input type="radio" name="question20" value="PHP"> PHP</li>
+            <li><input type="radio" name="question20" value="Python"> Python</li>
+            <li><input type="radio" name="question20" value="Ruby"> Ruby</li>
+        </ul>
+    </div>
+
+    <button type="submit">Отправить</button>
+</form>
+
+<div id="result"></div> <!-- Элемент для вывода результата -->
+<button id="showResults">Показать результаты тестирования</button> <!-- Кнопка для показа результатов -->
+<button id="clearResults">Очистить результаты тестирования</button> <!-- Кнопка для очистки результатов -->
+<div id="savedResults"></div> <!-- Элемент для вывода сохраненных результатов -->
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

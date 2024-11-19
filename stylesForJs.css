@@ -1,0 +1,83 @@
+.notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f8f9fa; /* Светлый фон */
+    color: #333; /* Темный текст */
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Добавляем тень для лучшего вида */
+    max-width: 90%; /* Максимальная ширина теперь 90% экрана */
+    width: 400px; /* Фиксированная ширина для больших экранов */
+    text-align: left; /* Выравнивание текста влево */
+    overflow: auto; /* Добавляем прокрутку, если контент превышает размер */
+}
+
+@media (max-width: 600px) {
+    .notification {
+        width: 90%; /* Ширина уведомления на маленьких экранах */
+        padding: 15px; /* Уменьшаем отступы на маленьких экранах */
+    }
+}
+
+
+.notification button {
+    margin-top: 20px; /* Отступ сверху для кнопки */
+    padding: 10px 15px; /* Отступы для кнопки */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Скругленные углы */
+    background-color: #007bff; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s; /* Плавный переход цвета */
+}
+
+.notification button:hover {
+    background-color: #0056b3; /* Темный цвет при наведении */
+}
+
+.correct {
+    color: green; /* Цвет для правильных ответов */
+}
+
+.incorrect {
+    color: red; /* Цвет для неправильных ответов */
+}
+
+.selected {
+    background-color: #ffe6e6; /* Фон для выбранного неправильного ответа */
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Равномерное распределение колонок */
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+.flex-column {
+    flex: 1; /* Каждая колонка будет занимать равное пространство */
+    margin-right: 30px; /* Отступ между колонками */
+}
+
+.flex-column:last-child {
+    margin-right: 0; /* Убираем отступ у последней колонки */
+}
+
+.question-item {
+    margin-bottom: 10px; /* Отступ между вопросами */
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column; /* Колонки становятся строками на маленьких экранах */
+    }
+
+    .flex-column {
+        margin-right: 0; /* Убираем отступы между колонками */
+        margin-bottom: 20px; /* Отступ между строками */
+    }
+}
